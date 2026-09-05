@@ -255,7 +255,7 @@ try:
             cv2.rectangle(frame, (20, 20), (350, 90), (20, 20, 20), -1)
             cv2.putText(frame, "MAGICHANDS AI", (40, 55), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (255, 255, 255), 2)
             cv2.putText(frame, "Show your hand...", (40, 82), cv2.FONT_HERSHEY_SIMPLEX, 0.65, (0, 200, 255), 1)
- 
+  
             pinch_is_active = False
             thumb_was_active = False
             scroll_start_y = None
@@ -270,4 +270,4 @@ finally:
     cap.release()
     cv2.destroyAllWindows()
     detector.close()
-    print("MagicHands AI stopped.")
+    print("MagicHands AI stopped.")  
